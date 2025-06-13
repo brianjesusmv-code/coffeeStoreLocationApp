@@ -40,7 +40,7 @@ src/
 1. Clona el repositorio:
 
    ```bash
-   git clone https://github.com/brianjesusmv-code/coffeewhere.git
+   git clone [https://github.com/brianjesusmv-code/coffeewhere.git](https://github.com/brianjesusmv-code/coffeeStoreLocationApp.git)
    cd coffeewhere
    ```
 
