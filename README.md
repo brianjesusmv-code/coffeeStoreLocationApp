@@ -1,97 +1,72 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# ☕ CoffeeWhere
 
-# Getting Started
+CoffeeWhere es una aplicación móvil desarrollada con **React Native** que permite a los usuarios visualizar cafeterías en un mapa, explorar sus detalles y obtener la ubicación exacta mediante OpenStreetMap.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+## 🚀 Características
 
-## Step 1: Start Metro
+- 🗺️ Mapa interactivo con ubicación del usuario.
+- 📍 Lista de cafeterías cercanas.
+- 📄 Detalles completos de cada tienda (dirección, ciudad, provincia, etc).
+- 🎯 Onboarding inicial con solicitud de permisos de ubicación.
+- 🌐 Uso de Nominatim (OpenStreetMap) para geocodificación inversa.
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+## 🧱 Tecnologías
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+- [React Native](https://reactnative.dev/)
+- [React Navigation](https://reactnavigation.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [OpenStreetMap + Nominatim](https://nominatim.openstreetmap.org/)
+- [Context API](https://reactjs.org/docs/context.html) para manejo de permisos
 
-```sh
-# Using npm
-npm start
+## 📂 Estructura del proyecto
 
-# OR using Yarn
-yarn start
+```
+src/
+├── components/         # Componentes reutilizables como la lista de cafés
+├── contexts/           # Contexto para permisos de ubicación
+├── screens/            # Pantallas principales (Home, Onboarding, ShopDetails)
+├── navigation/         # Navegación con React Navigation
+├── @types/             # Tipos personalizados globales
 ```
 
-## Step 2: Build and run your app
+## 🧭 Navegación
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+- `Onboarding`: Pantalla de bienvenida y solicitud de permisos.
+- `Home`: Muestra un mapa cuadrado con las cafeterías listadas debajo.
+- `ShopDetails`: Detalles de la cafetería seleccionada (nombre, dirección, ciudad, etc).
 
-### Android
+## 📦 Instalación
 
-```sh
-# Using npm
-npm run android
+1. Clona el repositorio:
 
-# OR using Yarn
-yarn android
-```
+   ```bash
+   git clone https://github.com/brianjesusmv-code/coffeewhere.git
+   cd coffeewhere
+   ```
 
-### iOS
+2. Instala dependencias:
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+   ```bash
+   npm install
+   ```
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+3. Ejecuta la app:
 
-```sh
-bundle install
-```
+   - Android:
+     ```bash
+     npm run android
+     ```
 
-Then, and every time you update your native dependencies, run:
+> Asegúrate de tener configurado correctamente tu entorno de React Native ([guía oficial](https://reactnative.dev/docs/environment-setup)).
 
-```sh
-bundle exec pod install
-```
+## 🛡️ Permisos necesarios
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+- **Ubicación**: Para mostrar la posición actual del usuario y encontrar cafeterías cercanas.
 
-```sh
-# Using npm
-npm run ios
+## 🧑‍💻 Autor
 
-# OR using Yarn
-yarn ios
-```
+Desarrollado por [Brian Jesús Marzo Viviani]🧉
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+## 📄 Licencia
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
-
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+MIT License
